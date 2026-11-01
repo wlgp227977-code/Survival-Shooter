@@ -11,6 +11,7 @@ public class LivingEntity : MonoBehaviour, IDamageable
 
     public virtual void OnDamage(float damage, Vector3 hitPoint, Vector3 hitNormal)
     {
+        Debug.Log($"{name}이 {damage} 데미지를 받음");
         if (IsDead)
         {
             return;
@@ -23,10 +24,18 @@ public class LivingEntity : MonoBehaviour, IDamageable
             Die();
         }
     }
+    protected virtual void OnEnable()
+    {
+        IsDead = false;
+        Health = startingHealth;      
+          
+    }
+
 
     public virtual void Die()
     {
         IsDead = true;
         OnDead.Invoke();
-    }
+    }    
+
 }

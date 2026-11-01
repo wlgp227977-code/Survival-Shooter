@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fab3341e00ee9142a71e758a5804b0a, type: 3}
   m_Name: Hellephant
   m_EditorClassIdentifier: Assembly-CSharp::MonsterData
+  prefab: {fileID: -2892899250392392583, guid: 7ba3bd561940df74cb76f68f1967e0da, type: 3}
   maxHP: 200
   damage: 20
   speed: 1

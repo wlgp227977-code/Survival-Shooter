@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fab3341e00ee9142a71e758a5804b0a, type: 3}
   m_Name: MonsterData
   m_EditorClassIdentifier: Assembly-CSharp::MonsterData
+  prefab: {fileID: 6139285322917055096, guid: 75d9a578df6155f4c84cbdbdd7889b8a, type: 3}
   maxHP: 100
   damage: 20
   speed: 2

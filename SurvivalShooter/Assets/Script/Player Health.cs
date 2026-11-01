@@ -24,10 +24,11 @@ public class PlayerHealth : LivingEntity
     {
         if (IsDead)
         {
-            playerAudioSource.PlayOneShot(hitClip);
-        }
-        base.OnDamage(damage, hitPoint, hitNormal);
+            return;
+        } 
 
+        playerAudioSource.PlayOneShot(hitClip);
+        base.OnDamage(damage, hitPoint, hitNormal);
     }
 
     public override void Die()

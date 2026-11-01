@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 1587846680607650273}
   - component: {fileID: 4679616228509684271}
   - component: {fileID: 6232508193579949049}
-  m_Layer: 0
+  - component: {fileID: -2045421875390849460}
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -137,6 +138,24 @@ CapsuleCollider:
   m_Height: 1.1
   m_Direction: 1
   m_Center: {x: 0.21, y: 0.52, z: -0.05}
+--- !u!114 &-2045421875390849460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3136602019350344206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d520ca842f3425948a2c746d2e00256b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerHealth
+  startingHealth: 100
+  OnDead:
+    m_PersistentCalls:
+      m_Calls: []
+  hitClip: {fileID: 8300000, guid: 9922a12f34d0a084aab32de985459723, type: 3}
+  deathClip: {fileID: 8300000, guid: d36a393bca4582043982db9089e1694f, type: 3}
 --- !u!1 &3136602019350344208
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +353,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ecab3d2d2f975ea4393ffc70dcb5b6c4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Gun
+  fireTransform: {fileID: 0}
+  gunParticle: {fileID: 0}
+  gunData: {fileID: 0}
+  targetLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &3136602019350344262
 GameObject:
   m_ObjectHideFlags: 0

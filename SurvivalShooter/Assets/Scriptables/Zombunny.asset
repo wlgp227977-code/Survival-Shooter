@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fab3341e00ee9142a71e758a5804b0a, type: 3}
   m_Name: Zombunny
   m_EditorClassIdentifier: Assembly-CSharp::MonsterData
+  prefab: {fileID: -3985877322761988892, guid: c575aae645659f243a62b7a33073d39c, type: 3}
   maxHP: 50
   damage: 30
   speed: 2.5
