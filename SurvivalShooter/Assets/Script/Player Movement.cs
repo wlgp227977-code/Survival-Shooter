@@ -52,11 +52,7 @@ public class PlayerMovement : MonoBehaviour
 
                 float currentY = transform.eulerAngles.y;
 
-                float newY = Mathf.LerpAngle(
-                    currentY,
-                    targetY,
-                    rotationSpeed * Time.deltaTime
-                );
+                float newY = Mathf.LerpAngle(currentY, targetY, rotationSpeed * Time.deltaTime);
 
                 transform.rotation = Quaternion.Euler(0f, newY, 0f);
             }
